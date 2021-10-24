@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    // To take the name of the user:
+    cout << "What is your first name?\n";
+    string Fname;
+    cin >> Fname;
+    cout << "What is your last name?\n";
+    string Lname;
+    cin >> Lname;
+
+    // To take the name of the grades with options:
+    cout << "From the options below, choose what did your score?" << endl;
+    cout << "Enter:\n1 if you scored below 40\n2 if you scored between 40 and 49\n3 if you scored between 50 and 59\n4 if you scored between 60 and 69\n5 if you scored between 70 and 79\n6 if you scored 80 and above\n";
+    int score;
+    cin >> score;
+
+
+    // Execution of the gradings with from the options provided
+    switch (score)
+    {
+    case 1:
+    {
+        cout << Fname << " " << Lname << " has gotten the grade of F." << endl;
+        break;
+    }
+    case 2:
+    {
+        cout << Fname << " " << Lname << " has gotten the grade of E." << endl;
+        break;
+    }
+    case 3:
+    {
+        cout << Fname << " " << Lname << " has gotten the grade of D." << endl;
+        break;
+    }
+    case 4:
+    {
+        cout << Fname << " " << Lname << " has gotten the grade of C." << endl;
+        break;
+    }
+    case 5:
+    {
+        cout << Fname << " " << Lname << " has gotten the grade of B." << endl;
+        break;
+    }
+    case 6:
+    {
+        cout << Fname << " " << Lname << " has gotten the grade of A." << endl;
+        break;
+    }
+    default:
+    {
+        cout << "Invalid input" << endl;
+        break;
+    }
+    }
+}
